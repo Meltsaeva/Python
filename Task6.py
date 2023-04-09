@@ -7,17 +7,27 @@
 # 385916 -> yes
 # 123456 -> no
 
-num = int(input("Input ticket number - "))
-if 99999 < num < 1000000:
-    a = num % 10
-    b = (num % 10**2) // 10
-    c = (num % 10**3) // 10**2
-    d = (num % 10**4) // 10**3
-    e = (num % 10**5) // 10**4
-    f = (num % 10**6) // 10**5
-    if f + e + d == c + b + a:
-        print("Yes")
+# num = int(input("Input ticket number - "))
+# if 99999 < num < 1000000:
+#     a = num % 10
+#     b = (num % 10**2) // 10
+#     c = (num % 10**3) // 10**2
+#     d = (num % 10**4) // 10**3
+#     e = (num % 10**5) // 10**4
+#     f = (num % 10**6) // 10**5
+#     if f + e + d == c + b + a:
+#         print("Yes")
+#     else:
+#         print("No")
+# else:
+#     print("Incorrect")
+
+num = (input("Input ticket number - "))
+if 99999 < int(num) < 1000000:
+    if int(num[0]) + int(num[1]) + int(num[2]) == int(num[3]) + int(num[4]) + int(num[5]):
+        print("YES")
     else:
         print("No")
+  
 else:
     print("Incorrect")
