@@ -5,8 +5,19 @@
 # Output: 120
 
 n = int(input("Input N - "))
-sum = n
-while (n > 2 ):
-    sum = sum * (n - 1)
-    n -= 1
-    print(sum)
+# sum = n
+# while (n > 2 ):
+#     sum = sum * (n - 1)
+#     n -= 1
+# print(sum)
+
+factorial = 1
+a = 1
+while a <= n:
+    factorial = factorial * a
+    a += 1
+else:
+    print(factorial)
+
+
+
