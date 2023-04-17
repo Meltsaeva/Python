@@ -6,31 +6,21 @@
 # Input: 5
 # Output: 6
 
-# a = 0
-# b = 1
-# n = int(input("Input N - "))
-# sum = 0
-# i = 1
-# while (sum <= n):
-#     sum = a + b
-#     a = b
-#     b = sum
-#     i += 1
-#     if n != sum:
-#         print("-1")
-#         break
-#     else:print(i)
-
+n = int(input("Input N - "))
 a = 0
 b = 1
-n = int(input("Input N - "))
-sum = 0
-i = 1
-while (sum <= n):
-    sum = a + b
+count = 0
+i = 2
+t = 0
+while (n > count):
+    count = a + b
     a = b
-    b = sum
+    b = count
+    if n == count:
+        break
     i += 1
-if n != sum:
+if count != n:
     print("-1")
-else: print(i)
+else:
+    print(i+1)
+    
