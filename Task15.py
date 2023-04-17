@@ -7,3 +7,15 @@
 # записанных на новой строчке каждое. Здесь каждое число – это масса соответствующего арбуза
 # Input: 5 -> 5 1 6 5 9 Output: 1 9
 
+n = int(input("Input the number of watermelons - "))
+i = 1
+max = 0
+min = 1000
+while i <= n:
+    weight = int(input("Input kg - "))
+    i += 1
+    if weight > max:
+        max = weight
+    if weight < min:
+        min = weight
+print(min, max)
