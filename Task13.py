@@ -14,12 +14,13 @@ n = int(input("Input N - "))
 i = 1
 j = 0
 k = 0
+max = 0 
 while i <= n:
     t = int(input("Input t - "))
     i += 1
     if t > 0:
         j += 1
-        k = j
+        if k < j:
+            k = j
     else: j = 0
-    
 print(k)    
