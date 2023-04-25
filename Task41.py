@@ -8,4 +8,13 @@
 # 1 2 3 4 5 15151
 # Вывод: Вывод:
 # 02
-# 15 минут
+
+n = int(input("Input N - "))
+array_1 = [int(input(f'Input {i} ' ))for i in range(n)]
+count = 0
+for i in range(1, n - 1):
+    if array_1[i] > array_1[i - 1] and array_1[i] > array_1[i + 1]:
+        count += 1
+print(count)
+    
+
