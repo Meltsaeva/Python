@@ -4,10 +4,11 @@
 # Каждое число вводится с новой строки.
 
 array = []
-a = int(input("Input a1 - "))
+a1 = int(input("Input a1 - "))
 d = int(input("Input d - "))
 n = int(input("Input N - "))
+i = 0
 for i in range(n):
-    an = a + (i - 1) * d
+    an = a1 + i * d
     array.append(an)
 print(array)
